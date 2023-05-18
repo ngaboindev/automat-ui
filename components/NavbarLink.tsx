@@ -20,7 +20,7 @@ const NavbarLink = ({ href, isActive, linkList, children }) => {
     >
       <Link
         href={href}
-        className={`flex relative  items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 md:w-auto ${
+        className={`flex relative  items-center justify-between w-full py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary lg:p-0 lg:w-auto ${
           isHovered || isActive ? 'text-primary' : ''
         } `}
       >

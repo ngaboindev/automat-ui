@@ -48,7 +48,7 @@ const ServicesList = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 py-20 mt-4">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 py-20 mt-4">
       {list.map((item) => (
         <ServicesListItem
           key={item.title}

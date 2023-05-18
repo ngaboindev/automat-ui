@@ -13,12 +13,12 @@ const HomeHeaderSection = () => {
       <div className="absolute inset-0 bg-tertiary bg-opacity-50 ">
         <Navbar />
 
-        <div className="wrapper text-white relative top-[38%] -translate-y-1/2">
-          <div className="w-1/2 space-y-6">
-            <h1 className="text-7xl font-semibold">
+        <div className="wrapper text-white relative top-1/3 lg:top-[38%] -translate-y-1/2">
+          <div className="w-full lg:w-1/2 space-y-6">
+            <h1 className="text-4xl lg:text-7xl font-semibold">
               Artificial Intelligence for Business Applications
             </h1>
-            <p className="text-2xl font-extralight">
+            <p className="text-lg lg:text-2xl font-extralight">
               Ipsum amet aptent molestie finibus euismod sociosqu hac duis curae
               in
             </p>

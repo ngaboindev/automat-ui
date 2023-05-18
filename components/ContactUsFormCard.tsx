@@ -3,7 +3,7 @@ import React from 'react';
 const ContactUsFormCard = () => {
   return (
     <div className="z-40 -mt-24">
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-3">
         <div className="bg-primary">
           <div className="px-8 py-6 text-white flex justify-center items-center  h-full">
             <div>
@@ -28,7 +28,7 @@ const ContactUsFormCard = () => {
             </h4>
             <div className="pt-7">
               <form className="space-y-4">
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="space-y-1">
                     <label htmlFor="name" className="font-medium block">
                       Name

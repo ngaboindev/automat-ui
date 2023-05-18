@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+'use client';
 import React from 'react';
 import TestimonialCard from './TestimonialCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -46,11 +47,11 @@ const TestimonialSection = () => {
       <div className="absolute pt-24 inset-0 bg-tertiary bg-opacity-50">
         <div className="wrapper text-white text-center">
           <div className="space-y-5 pb-16 text-white">
-            <h6 className="text-primary uppercase tracking-wider font-light">
+            <h6 className="text-sm lg:text-base text-primary uppercase tracking-wider font-light">
               TESTIMONIAL
             </h6>
-            <h2 className="text-5xl  font-medium">What they say</h2>
-            <p className="font-light leading-normal">
+            <h2 className="text-3xl lg:text-5xl  font-medium">What they say</h2>
+            <p className="text-sm lg:text-base font-light leading-normal">
               Sit efficitur integer vivamus vel auctor enim urna elementum
               aenean senectus parturient. Pellentesque lorem porta volutpat
               litora enim quam elit justo phasellus.
@@ -59,6 +60,24 @@ const TestimonialSection = () => {
           <Swiper
             spaceBetween={20}
             slidesPerView={3}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+            }}
             loop={true}
             autoplay={{ delay: 2000 }}
           >

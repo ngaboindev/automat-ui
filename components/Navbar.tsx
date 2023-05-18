@@ -64,7 +64,7 @@ const Navbar = () => {
         </a>
         <button
           type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-white hover:text-primary bg-neutral rounded-sm md:hidden  focus:outline-none"
+          className="inline-flex items-center p-2 ml-3 text-sm text-white hover:text-primary bg-neutral rounded-sm lg:hidden  focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <span className="sr-only">Open main menu</span>
@@ -82,8 +82,8 @@ const Navbar = () => {
             />
           </svg>
         </button>
-        <div className={`${!isMenuOpen && 'hidden'} w-full md:block md:w-auto`}>
-          <ul className="flex items-center flex-col font-medium p-4 md:p-0 mt-4 border  rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0">
+        <div className={`${!isMenuOpen && 'hidden'} w-full lg:block lg:w-auto`}>
+          <ul className="flex items-center flex-col font-medium p-4 lg:p-0 mt-4 border  rounded-lg  lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0">
             {navLinks.map((navList) => (
               <NavbarLink
                 key={navList.name}

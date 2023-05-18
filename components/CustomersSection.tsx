@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+'use client';
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
@@ -50,8 +51,10 @@ const CustomersSection = () => {
     <div className="bg-accent pt-28 pb-56">
       <div className="wrapper">
         <div className="space-y-5 text-center text-white pb-20">
-          <h2 className="text-5xl  font-medium">Our Valued Customers</h2>
-          <p className="font-light leading-normal">
+          <h2 className="text-3xl lg:text-5xl  font-medium">
+            Our Valued Customers
+          </h2>
+          <p className="font-light leading-normal text-sm lg:text-base">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
@@ -61,6 +64,24 @@ const CustomersSection = () => {
           spaceBetween={20}
           slidesPerView={6}
           loop={true}
+          breakpoints={{
+            0: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 6,
+              spaceBetween: 40,
+            },
+          }}
           autoplay={{ delay: 2000 }}
         >
           {logos.map((logo) => (

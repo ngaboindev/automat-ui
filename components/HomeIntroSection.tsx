@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+'use client';
 import React from 'react';
 import HomeIntroSectionCard from './HomeIntroSectionCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -33,8 +34,8 @@ const HomeIntroSection = () => {
       <div className="wrapper">
         <HomeIntroSectionCard />
         <div className="pt-32">
-          <div className="flex gap-16">
-            <div className="relative w-1/2">
+          <div className="flex flex-col lg:flex-row gap-16">
+            <div className="relative w-full lg:w-1/2">
               <img
                 height="720"
                 src="/intro-section-banner.jpeg"
@@ -48,14 +49,14 @@ const HomeIntroSection = () => {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 pt-10 space-y-5 text-white">
+            <div className="w-full lg:w-1/2 pt-10 space-y-5 text-white">
               <h6 className="text-primary uppercase tracking-wider font-light">
                 About Automaton
               </h6>
-              <h2 className="text-5xl leading-tight font-medium">
+              <h2 className="text-3xl lg:text-5xl leading-tight font-medium">
                 Artificial Intelligence for Business Applications.
               </h2>
-              <p className="font-light leading-normal">
+              <p className="text-sm lg:text-base font-light leading-normal">
                 Augue feugiat nam elit non tellus dignissim per netus conubia.
                 Hac ut ullamcorper a sodales diam. Fusce mollis eget mus
                 convallis massa iaculis duis facilisis turpis purus adipiscing.
