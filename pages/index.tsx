@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import CallToActionSection from '../components/CallToActionSection';
 import CustomersSection from '../components/CustomersSection';
 import Footer from '../components/Footer';
@@ -11,6 +12,9 @@ import TestimonialSection from '../components/TestimonialSection';
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Homepage</title>
+      </Head>
       <HomeHeaderSection />
       <HomeIntroSection />
       <HomeIntroVideoSection />

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ServicesSectionNumbersCard = () => {
   return (
-    <div className="home__intro_section-card rounded-sm text-white -mt-48 z-40 relative">
+    <div className="home__intro_section-card rounded-sm text-white -bottom-14 pb-3 z-40 absolute">
       <div className="px-8 py-10">
         <div className="grid grid-cols-4">
           <div className="text-center space-y-3 text-white">

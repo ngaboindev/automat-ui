@@ -60,6 +60,7 @@ const HomeIntroSection = () => {
                 Hac ut ullamcorper a sodales diam. Fusce mollis eget mus
                 convallis massa iaculis duis facilisis turpis purus adipiscing.
               </p>
+
               <Swiper
                 spaceBetween={20}
                 slidesPerView={3}

@@ -1,12 +1,14 @@
 import React from 'react';
 import ServicesSectionNumbersCard from './ServicesSectionNumbersCard';
 import ServicesList from './ServicesList';
+import { BsFillLayersFill } from 'react-icons/bs';
+import { AiOutlineMessage } from 'react-icons/ai';
+import { TbCertificate } from 'react-icons/tb';
 
 const ServicesSection = () => {
   return (
     <div className="bg-accent py-24">
       <div className="wrapper">
-        <ServicesSectionNumbersCard />
         <div className="pt-32">
           <div className="grid px-9  grid-cols-2 text-white">
             <div className="space-y-5">
@@ -43,6 +45,9 @@ const ServicesSection = () => {
             </div>
             <div className="grid grid-cols-3 pt-36  gap-3">
               <div className="text-center space-y-3">
+                <div className="text-primary flex items-center justify-center text-5xl">
+                  <BsFillLayersFill />
+                </div>
                 <h4 className="text-primary text-2xl font-light">Solutions</h4>
                 <p className="font-light leading-normal">
                   Vivamus condimentum praesent duis himenaeos netus diam gravida
@@ -50,6 +55,9 @@ const ServicesSection = () => {
                 </p>
               </div>
               <div className="text-center space-y-3">
+                <div className="text-primary flex items-center justify-center text-5xl">
+                  <TbCertificate />
+                </div>
                 <h4 className="text-primary text-2xl font-light">
                   Certified Expert
                 </h4>
@@ -59,6 +67,9 @@ const ServicesSection = () => {
                 </p>
               </div>
               <div className="text-center space-y-3">
+                <div className="text-primary flex items-center justify-center text-5xl">
+                  <AiOutlineMessage />
+                </div>
                 <h4 className="text-primary text-2xl font-light">
                   24/7 Support
                 </h4>

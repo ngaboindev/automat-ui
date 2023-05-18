@@ -10,10 +10,10 @@ const TestimonialCard = ({ message, name, title }) => {
         className="bg-white/95 rounded-sm shadow relative flex flex-col items-center justify-between
   "
       >
-        <div className="flex py-5 text-5xl text-[rgba(37,117,252,.2)] items-center justify-center text-neutral">
+        <div className="flex py-5 text-6xl  items-center justify-center text-[#92A7B6]">
           <IoMdQuote />
         </div>
-        <div className="px-8 py-10 text-neutral">
+        <div className="px-8 py-5 text-neutral">
           <p>{message}</p>
         </div>
         <div className="grid grid-cols-5 pb-10 pt-5">

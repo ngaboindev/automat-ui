@@ -1,6 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import ServicesListItem from './ServicesListItem';
+import { BsFillGearFill, BsFillLayersFill } from 'react-icons/bs';
+import { IoAnalyticsSharp } from 'react-icons/io5';
+import { IoMdAnalytics } from 'react-icons/io';
+import { HiOutlineLightBulb } from 'react-icons/hi';
+import { VscSettingsGear } from 'react-icons/vsc';
 
 const ServicesList = () => {
   const list = [
@@ -8,31 +13,37 @@ const ServicesList = () => {
       title: 'Data Engineering',
       description:
         'Lorem ipsum dolor sit amet consectetur adipiscing elit dolor',
+      icon: <BsFillGearFill />,
     },
     {
       title: 'Data & Analytics',
       description:
         'Lorem ipsum dolor sit amet consectetur adipiscing elit dolor',
+      icon: <IoAnalyticsSharp />,
     },
     {
       title: 'Natural Language Processing(NLP)',
       description:
         'Lorem ipsum dolor sit amet consectetur adipiscing elit dolor',
+      icon: <BsFillLayersFill />,
     },
     {
       title: 'Object Tracking',
       description:
         'Lorem ipsum dolor sit amet consectetur adipiscing elit dolor',
+      icon: <HiOutlineLightBulb />,
     },
     {
       title: 'Prediction System',
       description:
         'Lorem ipsum dolor sit amet consectetur adipiscing elit dolor',
+      icon: <IoMdAnalytics />,
     },
     {
       title: 'Automations',
       description:
         'Lorem ipsum dolor sit amet consectetur adipiscing elit dolor',
+      icon: <VscSettingsGear />,
     },
   ];
 
@@ -43,6 +54,7 @@ const ServicesList = () => {
           key={item.title}
           title={item.title}
           description={item.description}
+          icon={list.icon}
         />
       ))}
     </div>
