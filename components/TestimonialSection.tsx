@@ -41,9 +41,9 @@ const TestimonialSection = () => {
       <img
         src="/testimonal-section-banner.jpeg"
         alt="Your Image"
-        className="w-full object-cover"
+        className="w-full object-cover h-[96vh]"
       />
-      <div className="absolute  py-24 inset-0 bg-tertiary bg-opacity-50">
+      <div className="absolute pt-24 inset-0 bg-tertiary bg-opacity-50">
         <div className="wrapper text-white text-center">
           <div className="space-y-5 pb-16 text-white">
             <h6 className="text-primary uppercase tracking-wider font-light">
